@@ -2,9 +2,35 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>学习总结</title>
-		<style>
-		    
+		
+		    <style>
+		    *{margin:0 ;padding: 0;font-family: "微软雅黑";list-style: none;}
+			#header{width: 100%;background-color: lightseagreen;}
+			.header_in{
+				width: 1230px;
+				margin: 0 auto;
+				padding: 10px 0;
+				color: #fff;
+			}
+			.header_in>h1{
+				margin-left: 10px 30px;
+				text-align: center;
+			}
+			.header_in>h2{
+				margin-left: 12px 0;
+			}
+			.header_in>h6{
+
+				margin-left: 10px 30px;
+				text-align: right;
+			}
+			#main{width: 1130px;margin: 0 auto;overflow: hidden;background-color: snow;}
+			.main_left{width: 500px;margin: 40px 40px;float: left;background-color: #fff;}
+			.main_left>h3{text-indent: 2em;margin: 30px 0 30px;}
+			.main_left>ul>li{text-indent: 4em;margin: 30px 0 30px;}
+			#bottom{width: 100%;background-color: lightseagreen;position: absolute;bottom: 0;height: 40px;}
 		</style>
+		
 	</head>
 	<body>
 		<div id="header">
