@@ -1,0 +1,103 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>2017.2.6 AJAX</title>
+		<style>
+		*{margin: 0;padding:0 ;font-family: "微软雅黑";}
+		    h1{background-color: lightseagreen;color: #fff;padding: 20px 30px;box-shadow: 0 0 10px #3c3c3c;}
+			.box{
+				width: 980px;
+				background-color: snow;
+				margin: 80px auto;
+				border-radius:10px ;
+				
+			}
+			.box>p{
+				margin: 5px 5px;
+				padding: 10px 10px;
+				
+			}
+			.bottom{width: 100%;height: 40px;background-color: lightseagreen;position: relative;bottom: 0;}
+		</style>
+	</head>
+	<body>
+	    <h1>2017.2.6 AJAX</h1>
+	    <div class="box">
+	    	<h3>AJAX的全称是什么？ 介绍一下AJAX？</h3>
+	    	<p style="text-indent: 2em;">AJAX的全称是Asynchronous JavaScript And XML.
+AJAX是2005年由Google发起并流行起来的编程方法， AJAX不是一个新的编程语言，但是它是一个使用已有标准的新的编程技术。
+使用AJAX可以创建更好，更快，更用户界面友好的Web应用。
+AJAX技术基于Javascript和HTTP Request.</p>
+
+            <b style="text-indent: 2em;display: block;font-size: 12px;">使用Ajax的最大优点，就是能在不更新整个页面的前提下维护数据。这使得Web应用程序更为迅捷地回应用户动作，并避免了在网络上发送那些没有改变过的信息。
+
+　　       <br>对应用Ajax最主要的缺点就是，它可能破坏浏览器后退按钮的正常行为
+
+　　               <br>因为Ajax中采用了xml技术，所以在Ajax中也可能问到XML的问题</b><br>
+	    	<h3>AJAX都有哪些优点和缺点？</h3>
+	    	<p style="text-indent: 2em;">Ajax的优点： 1。减轻服务器的负担，提升站点的性能 2。无刷新更新页面，减少用户实际和心理等待时间 3。更好的用户体验 4. 也可以把以前的一些服务器负担的工作转嫁到服务器，利用客户端闲置的处理能力来进行处理，减轻服务器和宽带的负担，节约空间和宽带租用成本 5.Ajax是基于标准化并被广泛支持的技术，并且不需要插件和下载小程序 6.Ajax使用Web中的界面与应用分离（也可以说是数据和呈现分离），而在以前两者是没有清晰的界限的，数据与呈现分离，有利于分工合作，减少非技术人员对页面的修改造成的Web应用程序错误，提高效率，也更加适用于现在的发布系统。虽然有如此的优点，但也总有不如意的地方： 1.一些手持设备（如手机、PDA等）现在还不能很好的支持Ajax 2.用Javascript做的Ajax引擎，Javascript的兼容性和Debug都是让人头疼的事 3.Ajax的无刷新重载，由于页面的变化没有刷新重载那么明显，所以容易给用户带来困扰----用户不清楚现在的数据时心得还是已经更新过的；现在的解决方式有在相关位置提示、数据更新的区域设计的比较明显、数据更新后给用户提示等。 4.对流媒体的支持没有Flash、Java Applet好 5.中间过程不能被bookmark。解决方法：GoogleMaps通过在页面上提供一个“link to this page”的办法来解决。另外，还可以通过在URL连接中加无效的？^标记来解决，但还未验证。</p>
+	    	<h4>1.什么是ajax，为什么要使用ajax</h4>
+             <p>提高用户体验和交互，提高网页载入速度。 有很多网页他们有相同之处，使用AJAX加载不同的地方，相同的地方就不用再加载，可以很大的提高网页载入速度。</p>
+	        <h4>2、请介绍一下XMLhttprequest对象。</h4>  
+	          
+	          <p>XMLHttpRequest 对象用于在后台与服务器交换数据。</p>
+	          <p style="text-indent: 2em;">在不重新加载页面的情况下更新网页</p>
+	          <p style="text-indent: 2em;">在后台向服务器发送数据</p>
+	          <p style="text-indent: 2em;">在页面已加载后从服务器请求数据</p>
+	          <p style="text-indent: 2em;">在页面已加载后从服务器接收数据</p>
+	     <h4>3、AJAX技术体系的组成部分有哪些。</h4>
+	   	  <p style="text-indent: 2em;">使用XHTML和CSS标准化呈现; 
+                                                                                                 使用DOM实现动态显示和交互;
+                                                                                                 使用XML和XSLT进行数据交换与处理;
+                                                                                                 使用XMLHttpRequest进行异步数据读取;
+                                                                                                 最后用JavaScript绑定和处理所有数据;</p>
+          <h4>4、AJAX应用和传统Web应用有什么不同</h4>                                                                                       
+		  <p style="text-indent: 2em;">AJAX是异步发送请求，客户端动态加载服务器返回的更新数据，服务器响应客户端请求的只是更新的数据，而不是整个页面</p>
+		  <h4>5、AJAX请求总共有多少种CALLBACK。</h4>
+		  <p style="text-indent: 2em;">Ajax请求总共有八种Callback：</p>
+		  <p style="text-indent: 2em;">· onSuccess 
+                                       · onFailure 
+                                       · onUninitialized 
+                                       · onLoading 
+                                       · onLoaded 
+                                       · onInteractive 
+                                       · onComplete 
+                                       · onException</p>
+          <h4>6、Ajax和JavaScript的区别。</h4>                            
+		       <p style="text-indent: 2em;">javascript是一种在客户端执行的脚本语言。ajax是基于javascript的一种技术，它主要用途是提供异步刷新（只刷新页面的一部分，而不是整个页面都刷新）。一个是语言,一个是技术,两者有本质区别.</p>
+		  <h4>7、在浏览器端如何得到服务器端响应的XML数据</h4>
+		       <p style="text-indent: 2em;">XMLHttpRequest对象的responseXMl属性</p>
+		  <h4>8、 XMLHttpRequest对象在IE和Firefox中创建方式有没有不同。</h4>
+		       <p style="text-indent: 2em;">IE中通过new ActiveXObject()得到，Firefox中通过new XMLHttpRequest()得到</p>
+		  <h4>9、介绍一下XMLHttpRequest对象的常用方法和属性。</h4>
+		  <p style="text-indent: 2em;">open(“method”,”URL”) 建立对服务器的调用，第一个参数是HTTP请求方式</p>
+		  <p style="text-indent: 2em;">可以为GET，POST或任何服务器所支持的您想调用的方式。</p>
+		  <p style="text-indent: 2em;">第二个参数是请求页面的URL。</p>
+		  <p style="text-indent: 2em;">send()方法，发送具体请求</p>
+		    <p style="text-indent: 2em;">abort()方法，停止当前请求</p>
+		    <p style="text-indent: 2em;">readyState属性 请求的状态 有5个可取值 0=未初始化 ，1=正在加载，2=以加载，3=交互中，4=完成</p>
+		    <p style="text-indent: 2em;">responseText 属性 服务器的响应，表示为一个串</p>
+		    <p style="text-indent: 2em;">reponseXML 属性 服务器的响应，表示为XML</p>
+	        <p style="text-indent: 2em;">status 服务器的HTTP状态码，200对应ok 400对应not found</p>
+          <h4 >10、什么是XML</h4>
+             <p style="text-indent: 2em;"> 被设计用来传输和存储数据。XML 应用于 web 开发的许多方面，常用于简化数据的存储和共享。XML 把数据从 HTML 分离
+如果你需要在 HTML 文档中显示动态数据，那么每当数据改变时将花费大量的时间来编辑 HTML。
+通过 XML，数据能够存储在独立的 XML 文件中。这样你就可以专注于使用 HTML 进行布局和显示，并确保修改底层数据不再需要对 HTML 进行任何的改变。
+通过使用几行 JavaScript，你就可以读取一个外部 XML 文件，然后更新 HTML 中的数据内容。</p>
+          <h4>11、XML的解析方式</h4>  
+	         <img src="2017.2.6.png"style='display: block;margin: 10px 10px;width: 960px;'>
+	         <img src="2017.2.6.2.png"style='display: block;margin: 10px 10px 0;'>
+	         <img src="2017.2.6.3.png"style='display: block;margin: 0px 10px;'>
+	    </div>
+            <div class="bottom"></div>
+	</body>
+	<script>
+		
+		var day = new Date(2008,2,0);
+		
+		var days = day.getDate();
+		
+		console.log(days);
+		
+	</script>
+</html>
