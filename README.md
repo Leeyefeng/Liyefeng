@@ -3,12 +3,11 @@
 		<meta charset="utf-8" />
 		<title>学习总结</title>
 		
-		    <style>
+		    
 		    *{margin:0 ;padding: 0;font-family: "微软雅黑";list-style: none;}
-			#header{width: 100%;background-color: black}
-			.header_in{
-				width: 1230px;
-				margin: 0 auto;
+		
+			width: 1230px
+				margin: 0 auto
 				padding: 10px 0;
 				color: #fff;
 			}
@@ -29,7 +28,7 @@
 			.main_left>h3{text-indent: 2em;margin: 30px 0 30px;}
 			.main_left>ul>li{text-indent: 4em;margin: 30px 0 30px;}
 			#bottom{width: 100%;background-color: black;position: absolute;bottom: 0;height: 40px;}
-		</style>
+		
 		
 	</head>
 	<body>
