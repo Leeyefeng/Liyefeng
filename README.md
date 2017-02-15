@@ -5,9 +5,9 @@
 		
 		    <style>
 		    *{margin:0 ;padding: 0;font-family: "微软雅黑";list-style: none;}
-			#header{width: 100%;background-color: black;position: absolute;}
+			#header{width: 100%;background-color: black}
 			.header_in{
-				width: 100%;
+				width: 1230px;
 				margin: 0 auto;
 				padding: 10px 0;
 				color: #fff;
