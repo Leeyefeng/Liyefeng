@@ -9,7 +9,7 @@
 			.header_in{
 				width: 1230px;
 				margin: 0 auto;
-				padding: 30px 0;
+				padding: 5px 0;
 				color: #fff;
 			}
 			.header_in>h1{
