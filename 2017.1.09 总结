@@ -1,0 +1,84 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>2017.1.09 总结</title>
+		<style>
+		*{margin: 0;padding:0 ;font-family: "微软雅黑";}
+		    h1{background-color: lightseagreen;color: #fff;padding: 20px 30px;box-shadow: 0 0 10px #3c3c3c;}
+			.box{
+				width: 800px;
+				background-color: snow;
+				margin: 80px auto;
+				border-radius:10px ;
+				
+			}
+			.box>p{
+				margin: 5px 5px;
+				padding: 10px 10px;
+				
+			}
+			.bottom{width: 100%;height: 40px;background-color: lightseagreen;position: relative;bottom: 0;}
+		</style>
+	</head>
+	<body>
+	    <h1>2017.1.10 js复习 域名 总结</h1>
+	    <div class="box">
+             <p>1.常量申明：const 变量申明：var</p>
+	     <p>2.转换类型（+'1'——>number、+[]——>numbeer、null——>object）</p>
+	     <p>3.for循环（遍历数组）、for in （遍历非数组对象）、with(){}</p>
+	          <p style="text-indent: 2em;">·with——></p>
+	          <p style="text-indent: 2em;">(var obj = {}</p>
+	          <p style="text-indent: 2em;">with(obj){ name='zhangsan' }</p>
+	     <p>4.函数（普通函数是js中的一等公民）</p>
+	   	  <p style="text-indent: 2em;">(1)申明方式：·function fun(){}</p>
+		  <p style="text-indent: 8em;"> ·var fun = functiom(){}</p>
+		  <p style="text-indent: 8em;"> ·(function (){})();</p>
+		  <p style="text-indent: 8em;"> ·var fun = new Functiom('a=1','b=2','retur a+b')</p>
+		  <p style="text-indent: 2em;">(2)函数参数：·function fun(a，b，c){}（形参）</p>
+		  <p style="text-indent: 8em;"> ·fun(1,2,3,4);（实参）</p>
+		  <p style="text-indent: 8em;"> （arguments 伪数组 （无数组添加删除之类的方法，但是可以使用 .length））</p>
+		  <p style="text-indent: 2em;">(3)函数参数可以是函数名 function foo ( funn ){  funn(); }  </p>
+		  <p style="text-indent: 18em;"> foo(f1);</p>
+		  <p style="text-indent: 18em;"> function f1(){console.log(111)}</p>
+		    <p style="text-indent: 2em;">(4)函数声明 会被提前到最前（一等公民）</p>
+		    <p style="text-indent: 2em;">(5)apply call 改变this指向</p>
+		    <p style="text-indent: 8em;"> fun.apply(obj).[1,2,3,4]</p>
+		    <p style="text-indent: 8em;"> fun.call(obj,1,2,3,4)</p>
+	     <p>5.事件添加</p> 
+	          <p style="text-indent: 2em;">div.addEventlistener('click',fun,flase);</p>
+             <p>6.DOM BOM</p> 
+		     <p style="text-indent: 2em;">一般DOM是HTML DOM w3c的DOM （Document Object Model）</p>
+		     <p style="text-indent: 2em;">BOM各浏览器不一  Window（核心）~=类</p>
+	     <p>7. Date 获得指定月天数 ：</p>  
+		    <p style="text-indent: 2em;">var day = new Date(2008,2,0);</p>
+		    <p style="text-indent: 2em;">var days = day.getDate();</p>
+		    <p style="text-indent: 2em;">console.log(days); ——> 29</p>
+	     <p>8. 内置错误对象：</p>    
+		    <p style="text-indent: 2em;">RangeError 超出范围</p>
+		    <p><a href="http://www.jb51.net/article/14481.htm">外链</a></p>
+	      <p>9.Browser 对象：Window、 Navigator、 Screen、 History、 Location</p>
+	     <p>10.object对象： var obj = {} </p>
+		    <p style="text-indent: 6em;">obj.name = '张三';</p>
+             <p>11.闭包：（能访问函数内部变量的（同时可修改的））</p>
+		    <p style="text-indent: 2em;">function fun(){</p>
+		    <p style="text-indent: 2em;">var num = 1;</p>
+		    <p style="text-indent: 2em;">return function(){console.log(num)}}</p>
+		    <p style="text-indent: 2em;">fun()();</p>
+		<p>12.this 指向 (this 指向的对象是：调用时所在的环境对象)</p>   
+		    <p style="text-indent: 2em;">(1) 【div】 onclick='alert(this)'>div 【/div】 指向div</p>
+		    <p style="text-indent: 2em;">(2) function foo(){ console.log ( this ) } 指向Window</p>
+		    <p style="text-indent: 2em;">(3) var obj={}; obj.fun = function(e){console.log(this);}  指向对象</p>
+		<p>13.域名（万网 香港服务器）</p>   
+            </div>
+            <div class="bottom"></div>
+	</body>
+	<script>
+		
+		var day = new Date(2008,2,0);
+		
+		var days = day.getDate();
+		
+		console.log(days);
+		
+	</script>
+</html>
