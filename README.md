@@ -3,9 +3,9 @@
 		<meta charset="utf-8" />
 		<title>学习总结</title>
 		
-		    
+		    <style>
 		    *{margin:0 ;padding: 0;font-family: "微软雅黑";list-style: none;}
-		
+		    </style>
 			
 		
 		
