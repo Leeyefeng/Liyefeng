@@ -5,7 +5,7 @@
 		
 		    <style>
 		    *{margin:0 ;padding: 0;font-family: "微软雅黑";list-style: none;}
-			#header{width: 100%;background-color: lightseagreen;}
+			#header{width: 100%;background-color: black;}
 			.header_in{
 				width: 1230px;
 				margin: 0 auto;
@@ -28,7 +28,7 @@
 			.main_left{width: 500px;margin: 40px 40px;float: left;background-color: #fff;}
 			.main_left>h3{text-indent: 2em;margin: 30px 0 30px;}
 			.main_left>ul>li{text-indent: 4em;margin: 30px 0 30px;}
-			#bottom{width: 100%;background-color: lightseagreen;position: absolute;bottom: 0;height: 40px;}
+			#bottom{width: 100%;background-color: black;position: absolute;bottom: 0;height: 40px;}
 		</style>
 		
 	</head>
@@ -36,7 +36,7 @@
 		<div id="header">
 			<div class="header_in">  
 				<h2>李烨锋</h2>
-				<h1>— &nbsp学习总结&nbsp —</h1>
+				<h1>学习总结</h1>
 				<h6>好好学习，天天向上</h6>
 			</div>
 			
